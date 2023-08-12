@@ -27,15 +27,21 @@
 		}
 
 		#pie{
-			background: url("salmones.svg") #B1D6F1;
-			background-size: contain;
-			background-position-x: 300px;
+			background: url("fondopie.jpg") #B1D6F1;
+			background-size:auto;
+			background-position-x: 0px;
 			height: 300px;
 			width:100%;
 			margin-top: 100px;
 			position: sticky;
 			top:100%;
+			animation:scroll 40s linear infinite;
 		}
+
+	@keyframes scroll {
+		from{background-position-x: 0px;}
+		to{background-position-x: 1199px;}
+	}
 
 		#menu a{
 			display:block;
