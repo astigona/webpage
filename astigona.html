@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Vast+Shadow&display=swap" rel="stylesheet">
+		<style>	
+		html, body{
+			background:#109648;
+			margin:0;
+			font-family: "Krona One";
+			height:100%;
+		}
+
+		#logo{
+			width:200px;
+			margin-top: 100px;
+		}
+
+		#contenedor{
+			display:flex;
+			justify-content:flex-start;
+			align-items:center;
+			flex-direction: column;
+		}
+
+		#pie{
+			background: repeating-linear-gradient(
+			120deg,
+			rgba(0,0,0,0),
+			rgba(0,0,0,0) 10px,
+			#206CA6 10px,
+			#206CA6 40px
+			);
+			height: 300px;
+			width:100vw;
+			margin-top: 100px;
+			position: sticky;
+			top:100vh;
+		}
+
+		#menu a{
+			display:block;
+			margin:20px;
+			padding:40px 10px;
+			border:3px solid #febf6d;
+			color:#febf6d;
+			text-align: center;
+			font-size: 16px;
+			width:400px;
+			box-shadow: 5px 5px #febf6d;
+			transition: 0.2s;
+		}
+
+		#menu a:hover{
+			background: #febf6d;
+			color:#109648;
+			transition: 0.2s;
+		}
+
+		#avatar{
+			background: url("avatar.png");
+			background-size: contain;
+			position: fixed;
+			bottom:0;
+			left:0;
+			width:600px;
+			height: 600px;
+		}
+
+		#menu a, #avatar{
+			max-width:80vw;
+		}
+
+		#avatar, #pie{
+			max-height:80vw;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="contenedor">
+			<img src="logo.svg" id="logo">
+			<div id="menu">
+				<a href="https://www.youtube.com/@astigona">Tutoriales de origami</a>
+				<a href="https://www.instagram.com/astigona">Reels y fotos</a>
+			</div>
+		</div>
+		<div id="pie">
+		</div>
+		<div id="avatar">
+		</div>
+	</body>
+</html>
